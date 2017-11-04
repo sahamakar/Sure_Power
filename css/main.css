@@ -188,7 +188,7 @@ body {
     background: #000;
 }
 .slider-item {
-    background: url("img/slide1.png") center right no-repeat;
+    background: url("../img/slide1.png") center right no-repeat;
     height: 640px;
     position: relative;
 }
