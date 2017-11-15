@@ -164,7 +164,7 @@ body {
     color: white;
     padding: 23px 15px 16px 15px;
     cursor: pointer;
-    border-bottom: solid #bd2631 7px;
+    /*border-bottom: solid #bd2631 7px;*/
 }
 #menu_switch {
     display: none;
@@ -302,12 +302,18 @@ body {
     width: 25%;
 }
 .icon-info {
+    display: flex;
     width: 25%
 }
 
-.info img {
+.text-info img, .photo-info img {
     height: 100%;
     width: 100%;
+}
+.icon-info img {
+    display: block;
+    margin: auto;
+    padding: 5px;
 }
 .text-above-photo {
     position: absolute;
@@ -324,10 +330,25 @@ body {
 .text-info p {
     color: #fff;
 }
-
+.red-background {
+    background: #bd2631;
+}
 
 
 /*RESPONSIVE */
+@media screen and (max-width: 2560px) {
+    .icon-info img {
+        width: 42%;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .icon-info img {
+        width: auto;
+    }
+}
+
+
 @media screen and (max-width: 1170px) {
     .contacts .city-select {
         float: none;
